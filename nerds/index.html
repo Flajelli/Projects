@@ -7,9 +7,9 @@
 	</head>
 	<body>
 		<header>
-			<a class="logo__link-main"><img src="images/nerds-logo.svg" alt="На главную страницу" class="logo"></a>
+			<a class="logo__link-main" aria-lavel="На главную"><img src="images/nerds-logo.svg" alt="Логотип компании Nerds" class="logo"></a>
 
-			<nav class="nav_main">
+			<nav class="nav">
 				<ul>
 					<li><a href="#" class="nav__link"></a>студия</li>
 					<li><a href="#" class="nav__link"></a>клиенты</li>
@@ -21,43 +21,42 @@
 				</ul>
 			</nav>
 
+			<section class="header">
+
+				<h1 class="none-visual">Студия дизайна Nerds</h1>
+
+				<span class="header__title">Долго, дорого, скрупулезно.</span>
+
+				<p class="header__text">Математически выверенный дизайн <br> для вашего сайта или мобильного приложения.</p>
+
+				<button class="header__btn">узнать больше</button>
+			</section>
 		</header>
-		<section class="header">
-
-			<h1 class="none-visual">Студия дизайна Nerds</h1>
-
-			<span>Долго, дорого, скрупулезно.</span>
-
-			<p class="header__text">Математически выверенный дизайн <br> для вашего сайта или мобильного приложения.</p>
-
-			<button class="header__btn">узнать больше</button>
-
-			<div class="header__pic"></div>
-		</section>
+		
 
 		<section class="order">
 
 			<h2 class="none-visual">Услуги</h2>
 
 			<div class="order-item">
-				<img src="images/png/comp.png" alt="Картинка с компьютером" class="order-item__pic">
-				<h3 class="order-item_title">Веб-сайты</h3>
+				<img src="images/png/comp.png" alt="Компьютер" class="order-item__pic">
+				<h3 class="order-item__title">Веб-сайты</h3>
 				<p class="order-item__text">Мир никогда не будет прежним, после того как увидит ваш сайт!</p>
 				<button type="button" class="order-item__btn order-item__btn_red">Заказать</button>
 			</div>
 
 			<div class="order-item">
-				<img src="images/png/phone.png" alt="Картинка с телефоном" class="order-item__pic">
+				<img src="images/png/phone.png" alt="Телефон" class="order-item__pic">
 				<h3 class="order-item_title">Приложения</h3>
 				<p class="order-item__text">Покорите топ-10 приложений в AppStore и Google Play</p>
 				<button type="button" class="order-item__btn order-item__btn_green">Заказать</button>
 			</div>
 
 			<div class="order-item">
-					<img src="images/png/graph.png" alt="Картинка с доской, на которой нарисованы графики" class="order-item__pic">
-					<h3 class="order-item_title">Презентации</h3>
-					<p class="order-item__text">Вы даже не подозреваете, насколько вы изумительны</p>
-					<button type="button" class="order-item__btn order-item__btn_yellow">Заказать</button>
+				<img src="images/png/graph.png" alt="Графики" class="order-item__pic">
+				<h3 class="order-item_title">Презентации</h3>
+				<p class="order-item__text">Вы даже не подозреваете, насколько вы изумительны</p>
+				<button type="button" class="order-item__btn order-item__btn_yellow">Заказать</button>
 			</div>
 		</section>
 
@@ -76,23 +75,25 @@
 				<li>Слайдшоу и видео для копоративных презентаций</li>
 			</ul>
 			
-				<a class="logo__link-main"><img src="images/png/bg-logo.png" alt="Логотип" class="work__right_logo"></a>
+			<div class="right-block">
+				<img src="images/png/bg-logo.png" alt="Логотип" class="right-block_logo">
 
-			<p class="work__right_text">с 2004 года любимым точность во всем:</p>
+				<p class="right-block_text">с 2004 года любимым точность во всем:</p>
 
-			<div class="work__right_percent">
+				<div class="right-block_percent">
 
-				<span class="work__right">
-					<span class="percent">146%
-						<span class="text">Уровень самоотдачи </span>
-					</span>
-					<span class="percent">100%
-						<span class="text">Соблюдение сроков</span>
-					</span>
-					<span class="percent">50%
-						<span class="text">Минимальная предоплата</span>
-					</span>
-				</span>	
+				<span class="right-block">
+						<span class=right-block__percent">146%
+							<span class=right-block__text">Уровень самоотдачи </span>
+						</span>
+						<span class=right-block__percent">100%
+							<span class=right-block__text">Соблюдение сроков</span>
+						</span>
+						<span class=right-block__percent">50%
+						<span class=right-block__text">Минимальная предоплата</span>
+						</span>
+					</span>	
+				</div>
 			</div>
 		</section>
 
@@ -117,10 +118,11 @@
 		</section>
 
 		<footer>
-			<ul>
-				<li><a href=""></a><img src="images/vk-icon.svg" alt="Вконтакте"></li>
-				<li><a href=""></a><img src="images/fb-icon.svg" alt="Фейсбук"></li>
-				<li><a href=""></a><img src="images/insta-icon.svg" alt="Инстаграм"></li>
+
+			<ul class="social">
+				<li><a href="#" class="social__link"><img src="images/vk-icon.svg" alt="Группа Вконтакте"></a></li>
+				<li><a href="#" class="social__link"><img src="images/fb-icon.svg" alt="Группа в Фейсбуке"></a></li>
+				<li><a href="#" class="social__link"><img src="images/insta-icon.svg" alt="Страничка в Инстаграме"></a></li>
 			</ul>
 
 			<p class="foot__friend">
