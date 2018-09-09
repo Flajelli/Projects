@@ -5,20 +5,21 @@
 	<title>Nerds</title>
 </head>
 <body>
-	<header class="header__main">
-		<a href="#"><img src="images/nerds-logo.svg" alt="Логотип компании Nerds" class="link__main"></a>
-		<nav class="nav">
-			<ul class="nav__list text_upper-bold">
-				<li><a class="nav__link" href="#">Студия</a></li>
-				<li><a class="nav__link" href="#">Клиенты</a></li>
-				<li><a class="nav__link" href="#">Магазин</a></li>
-				<li><a class="nav__link" href="#">Контакты</a></li>
+	<header class="header">
+		
+		<nav class="header__top">
+			<a href="#" class="logo"><img src="images/nerds-logo.svg" alt="Логотип компании Nerds" class="logo__img"></a>
+			<ul class="header__top text_upper-bold">
+				<li><a class="header__link" href="#">Студия</a></li>
+				<li><a class="header__link" href="#">Клиенты</a></li>
+				<li><a class="header__link" href="#">Магазин</a></li>
+				<li><a class="header__link" href="#">Контакты</a></li>
 			</ul>
-			<ul class="nav__basket text_upper-bold">
-				<li><a class="nav__link" href="#">Корзина</a></li>
+			<ul class="header__top_basket text_upper-bold">
+				<li><a class="header__link" href="#">Корзина</a></li>
 			</ul>
 		</nav>
-		<section class="header">
+		<section class="header__main">
 			<h1 class="none-visual">Студия дизайна Nerds</h1>
 			<span class="header__title">Долго, дорого, скрупулезно.</span>
 			<p class="header__text">Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
@@ -26,30 +27,53 @@
 			<img src="images/png/phones.png" alt="Смартфоны андройд" class="header__pic">
 		</section>
 	</header>
+	<main>	
+		<section class="order">
+			<h2 class="none-visual">Услуги</h2>
+			<div class="order-item">
+				<img src="images/png/comp.png" alt="Компьютер" class="order-item__pic">
+				<h3 class="order-item__title text_upper-bold">Веб-сайты</h3>
+				<p class="order-item__desc desc_thin">Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
+				<button class="btn btn_red">Заказать</button>
 	
-	<section class="order">
-		<h2 class="none-visual">Услуги</h2>
-		<div class="order-item">
-			<img src="images/png/comp.png" alt="Компьютер" class="order-item__pic">
-			<h3 class="order-item__title text_upper-bold">Веб-сайты</h3>
-			<p class="order-item__desc">Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
-			<button class="btn btn_red">Заказать</button>
-
-		</div>
-		<div class="order-item">
-			<img src="images/png/phone.png" alt="Телефон" class="order-item__pic">
-			<h3 class="order-item__title text_upper-bold">Приложения</h3>
-			<p class="order-item__desc">Покорите топ-10 приложений в AppStore и Google Play</p>
-			<button class="btn btn_green">Заказать</button>
-		</div>
-
-		<div class="order-item">
-			<img src="images/png/graph.png" alt="Перезнтация" class="order-item__pic">
-			<h3 class="order-item__title text_upper-bold">Презентации<h3>
-			<p class="order-item__desc">Вы даже не подозреваете, насколько вы изумительны!</p>
-			<button class="btn btn_yellow">Заказать</button>
-		</div>
-	</section>
+			</div>
+			<div class="order-item">
+				<img src="images/png/phone.png" alt="Телефон" class="order-item__pic">
+				<h3 class="order-item__title text_upper-bold">Приложения</h3>
+				<p class="order-item__desc desc_thin">Покорите топ-10 приложений в AppStore и Google Play</p>
+				<button class="btn btn_green">Заказать</button>
+			</div>
 	
+			<div class="order-item">
+				<img src="images/png/graph.png" alt="Перезнтация" class="order-item__pic">
+				<h3 class="order-item__title text_upper-bold">Презентации<h3>
+				<p class="order-item__desc desc_thin">Вы даже не подозреваете, насколько вы изумительны!</p>
+				<button class="btn btn_yellow">Заказать</button>
+			</div>
+		</section>
+		
+		<section class="scope">
+			<h2 class="none-visual">То, что мы умеем</h2>
+			<span class="scope__title">Мы - маленькая, но гордая дизайн-студия из Краснодара</span>
+			<p class="scope__desc desc_thin">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не 	покладая рук, как роботы.</p>
+			<span class="scope__list-title text_upper-bold">Выполняем заказы на разработку: </span>
+			<ul class="about__list">
+				<li class="text_thin"></li>
+				<li class="text_thin"></li>
+				<li class="text_thin"></li>
+			</ul>
+		</section>
+	
+		<section class="about">
+			<h2 class="none-visual">О компании</h2>
+			<img src="images/png/bg-logo.png" alt="Логотип компании Nerds" class="about__logo">
+			<span class="about__desc text_upper-bold">С 2004 года любимым точность во всем:</span>
+			<ul class="about__list">
+				<li class="about__list-item"><span class="text_upper-bold">146%</span><span class="desc_thin">Уровень самоотдачи</span></li>
+				<li class="about__list-item"><span class="text_upper-bold">100%</span><span class="desc_thin">Соблюдение сроков</span></li>
+				<li class="about__list-item"><span class="text_upper-bold">50%</span><span class="desc_thin">Минимальная предоплата</span></li>
+			</ul>
+		</section>
+	</main>
 </body>
 </html>
